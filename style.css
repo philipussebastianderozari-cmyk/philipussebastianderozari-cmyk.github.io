@@ -1,0 +1,147 @@
+/* Pengaturan Dasar & Font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Warna Latar Belakang Bertema Tech Gahar */
+body {
+    background-color: #0f172a; /* Biru gelap/hitam metalik */
+    color: #e2e8f0; /* Putih keabu-abuan agar nyaman dibaca */
+}
+
+/* Header & Navigasi */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: #1e293b;
+    border-bottom: 2px solid #00f2fe; /* Garis aksen biru sirkuit */
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #00f2fe;
+    text-shadow: 0 0 10px rgba(0, 242, 254, 0.5);
+}
+
+nav a {
+    color: #94a3b8;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #00ff88; /* Aksen hijau neon saat disentuh */
+}
+
+/* Hero Section / Banner Depan */
+.hero {
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: radial-gradient(circle, #1e293b 0%, #0f172a 100%);
+    padding: 0 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.highlight {
+    color: #00ff88; /* Efek menyala hijau robotik */
+    text-shadow: 0 0 10px rgba(0, 255, 136, 0.5);
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #94a3b8;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 28px;
+    background-color: transparent;
+    color: #00f2fe;
+    border: 2px solid #00f2fe;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    box-shadow: 0 0 10px rgba(0, 242, 254, 0.2);
+}
+
+.btn:hover {
+    background-color: #00f2fe;
+    color: #0f172a;
+    box-shadow: 0 0 20px rgba(0, 242, 254, 0.6);
+}
+
+/* Pengaturan Konten Umum */
+.section {
+    padding: 60px 8%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.section h2 {
+    font-size: 2rem;
+    border-left: 4px solid #00ff88;
+    padding-left: 15px;
+    margin-bottom: 20px;
+    color: #f8fafc;
+}
+
+/* Grid Layout untuk Kartu Proyek Elektronika */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.card {
+    background-color: #1e293b;
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid #334155;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: #00ff88; /* Berubah hijau saat disorot mouse */
+    box-shadow: 0 5px 15px rgba(0, 255, 136, 0.2);
+}
+
+.card h3 {
+    margin-bottom: 12px;
+    color: #00f2fe;
+}
+
+.card p {
+    color: #94a3b8;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Footer halaman */
+footer {
+    text-align: center;
+    padding: 40px;
+    background-color: #090d16;
+    color: #64748b;
+    font-size: 0.9rem;
+    border-top: 1px solid #1e293b;
+}
